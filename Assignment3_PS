@@ -1,0 +1,64 @@
+DECLARE inpstr As String
+
+DECLARE cmpchar As CHARACTER
+
+DECLARE alphacount As Integer
+
+DECLARE digicounter As Integer
+
+DECLARE spcharcounter As Integer
+
+DECLARE alphabets As String
+
+DECLARE i As Integer
+
+DECLARE spcounter As Integer
+
+alphabets = "abcdefghijklmnoqrstuvwxyz"
+
+spcharcounter = 0
+
+digicounter = 0
+
+alphacount = 0
+
+cmpchar = ""
+
+inpstr = ""
+
+spcounter = 0
+
+i = 0
+
+INPUT(“Input the string : “,inpstr)
+
+
+For i = 1 To Len(inpstr)
+
+cmpchar = Mid(inpstr, i, 1)
+
+If LOCATE(alphabets, cmpchar) Then
+
+alphacount = alphacount + 1
+
+ElseIf cmpchar >= "0" And cmpchar <= "9" Then
+
+digicounter = digicounter + 1
+
+Else
+
+spcounter = spcounter + 1
+
+
+
+End If
+
+Next
+
+PRINT("ALPHABETS :" & alphacount)
+
+PRINT("DIGITS :" & digicounter)
+
+PRINT("SPECIAL CHARACTER :" & spcharcounter)
+
+PRINT("TOTAL CHARACTERS :" & Len(inpstr))
