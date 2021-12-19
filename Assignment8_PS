@@ -35,17 +35,15 @@ f_string = ""
 INPUT "Enter the String :",inputstr
 
 
-firstchar = Midinputstr, 1, 1
+firstchar = Mid(inputstr, 1, 1)
 
 f_string = f_string + firstchar
-
-Console.WriteLinefirstchar
 
 For i = 2 To Leninputstr
 
 cmpchar = Midinputstr, i, 1
 
-Console.WriteLinecmpchar
+PRINT cmpchar
 
 If firstchar <> Midinputstr, i, 1 Then
 
