@@ -1,0 +1,42 @@
+DECLARE inputstr As String
+
+DECLARE i As Integer
+
+DECLARE VC As Integer
+
+DECLARE cmpchar As CHARACTER
+
+DECLARE vowels As String
+
+vowels = "aeiou"
+
+
+
+inputstr = ""
+
+i = 0
+
+VC = 0
+
+cmpchar = ""
+
+
+
+INPUT("Enter the string : ",inputstr)
+
+
+For i = 1 To Len(inputstr)
+
+cmpchar = Mid(inputstr, i, 1)
+
+If LOCATE(vowels, cmpchar) Then
+
+VC = VC + 1
+
+
+
+End If
+
+Next
+
+PRINT("TOTAL NUMBER OF VOWELS : " & VC)
