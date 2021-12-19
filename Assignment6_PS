@@ -12,7 +12,7 @@ isMany = False
 
 
 
-INPUT("Enter the number of donuts :",inpcount)
+INPUT"Enter the number of donuts :",inpcount
 
 
 If inpcount > 10 Then
@@ -27,12 +27,12 @@ End If
 
 If isMany = True Then
 
-PRINT("Number of donuts: MANY")
+PRINT "Number of donuts: MANY"
 
 
 
 Else
 
-PRINT("Number of donuts:" & inpcount)
+PRINT"Number of donuts:" & inpcount
 
 End If
