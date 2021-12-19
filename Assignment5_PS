@@ -18,11 +18,11 @@ i = 0
 
 VC = 0
 
-cmpchar = ""
+cmpchar = ''
 
 
 
-INPUT("Enter the string : ",inputstr)
+INPUT"Enter the string : ",inputstr
 
 
 For i = 1 To Len(inputstr)
@@ -39,4 +39,4 @@ End If
 
 Next
 
-PRINT("TOTAL NUMBER OF VOWELS : " & VC)
+PRINT"TOTAL NUMBER OF VOWELS : " & VC
