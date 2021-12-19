@@ -39,9 +39,9 @@ str2 = "not"
 
 str3 = "bad"
 
-x = LOCATE  str1, str2  
+x = LOCATE(str1, str2)  
 
-y = LOCATE  str1, str3  
+y = LOCATE(str1, str3)
 
 
 
@@ -49,13 +49,13 @@ y = LOCATE  str1, str3
 
 If x > 0 Then
 
-leftstring = Left  str1, x - 1  
+leftstring = Left(str1, x - 1) 
 
 
 
 If y > 0 Then
 
-rightstring = Mid  str1, y + 3, Len  str1    
+rightstring = Mid(str1, y + 3, Len  str1)  
 
 
 
