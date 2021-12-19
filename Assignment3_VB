@@ -1,0 +1,40 @@
+Module Module1
+
+    Sub Main()
+        Dim inpstr As String
+        Dim cmpchar As Char
+        Dim alphacount As Integer
+        Dim digicounter As Integer
+        Dim spcharcounter As Integer
+        Dim alphabets As String
+        Dim i As Integer
+        Dim spcounter As Integer
+        alphabets = "abcdefghijklmnoqrstuvwxyz"
+        spcharcounter = 0
+        digicounter = 0
+        alphacount = 0
+        cmpchar = ""
+        inpstr = ""
+        spcounter = 0
+        i = 0
+        Console.WriteLine("Input the string : ")
+        inpstr = Console.ReadLine()
+        For i = 1 To Len(inpstr)
+            cmpchar = Mid(inpstr, i, 1)
+            If InStr(alphabets, cmpchar) Then
+                alphacount = alphacount + 1
+            ElseIf cmpchar >= "0" And cmpchar <= "9" Then
+                digicounter = digicounter + 1
+            Else
+                spcounter = spcounter + 1
+
+            End If
+        Next
+        Console.WriteLine("ALPHABETS :" & alphacount)
+        Console.WriteLine("DIGITS :" & digicounter)
+        Console.WriteLine("SPECIAL CHARACTER :" & spcharcounter)
+        Console.WriteLine("TOTAL CHARACTERS :" & Len(inpstr))
+        Console.ReadKey()
+    End Sub
+
+End Module
