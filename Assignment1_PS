@@ -2,7 +2,7 @@ DECLARE inpstr, str1 As String
 
 DECLARE count As Integer
 
-DECLARE cmpchar As Char
+DECLARE cmpchar As CHARACTER
 
 DECLARE Notfound As Boolean
 
