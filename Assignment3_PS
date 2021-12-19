@@ -55,10 +55,10 @@ End If
 
 Next
 
-PRINT("ALPHABETS :" & alphacount)
+PRINT"ALPHABETS :" + alphacount
 
-PRINT("DIGITS :" & digicounter)
+PRINT "DIGITS :" + digicounter
 
-PRINT("SPECIAL CHARACTER :" & spcharcounter)
+PRINT "SPECIAL CHARACTER :" + spcharcounter
 
-PRINT("TOTAL CHARACTERS :" & Len(inpstr))
+PRINT "TOTAL CHARACTERS :" + Len(inpstr)
