@@ -1,0 +1,29 @@
+DECLARE str1 As String
+
+str1 = ""
+
+INPUT “Enter the verb :”,str1
+
+If Len(str1) >= 3 Then
+
+If InStr(str1, "ing") > 0 Then
+
+
+
+
+
+str1 = str1 + "ly"
+
+Else : str1 = str1+ "ing"
+
+End If
+
+
+
+
+
+
+
+End If
+
+PRINT(str1)
