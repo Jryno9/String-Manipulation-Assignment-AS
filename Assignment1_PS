@@ -19,7 +19,7 @@ Cmpchar=’’
 
 
 
-INPUT ("Enter the string : "),Inspstr
+INPUT "Enter the string : ",Inspstr
 
 
 For count = 1 To Len(inpstr)
@@ -44,10 +44,10 @@ Next
 
 If Notfound = True Then
 
-INPUT("Does not contain all alphabets ")
+PRINT "Does not contain all alphabets "
 
 Else
 
-INPUT("Does contain all alphabets")
+PRINT "Does contain all alphabets"
 
 End If
