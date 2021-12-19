@@ -45,16 +45,16 @@ f_string = ""
 INPUT"Enter the String :",inputstr
 
 
-firstchar = Midinputstr, 1, 1
+firstchar = Mid(inputstr, 1, 1)
 
-secondchar = Midinputstr, 2, 1
+secondchar = Mid(inputstr, 2, 1)
 
 
 
-For i = Leninputstr To 1 Step -1
+For i = Len(inputstr) To 1 Step -1
 
-lastchar = Midinputstr, i, 1
-seclastchar = Midinputstr, i - 1, 1
+lastchar = Mid(inputstr, i, 1)
+seclastchar = Mid(inputstr, i - 1, 1)
 Exit For
 
 Next
