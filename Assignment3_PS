@@ -22,7 +22,7 @@ digicounter = 0
 
 alphacount = 0
 
-cmpchar = ""
+cmpchar = ''
 
 inpstr = ""
 
