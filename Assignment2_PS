@@ -1,0 +1,53 @@
+DECLARE inpstr As String
+
+DECLARE inpchar As CHARACTER
+
+DECLARE i As Integer
+
+DECLARE cmpChar As CHARACTER
+
+DECLARE replchar As CHARACTER
+
+DECLARE fstring As String
+
+inpchar = ""
+
+i = 0
+
+fstring = ""
+
+inpstr = ""
+
+cmpchar = ""
+
+replchar= ""
+
+INPUT("Enter the string: ")
+
+inpstr = Console.ReadLine()
+
+INPUT("Enter the character you want to replace: ",instr)
+
+inpchar = Console.ReadLine()
+
+INPUT("Enter the character you want to replace with:")
+
+replchar = Console.ReadLine()
+
+For i = 1 To Len(inpstr)
+
+cmpchar = Mid(inpstr, i, 1)
+
+If inpchar <> cmpchar Then
+
+fstring = fstring + cmpchar
+
+Else
+
+fstring = fstring + replchar
+
+End If
+
+Next
+
+PRINT(fstring)
