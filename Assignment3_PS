@@ -30,7 +30,7 @@ spcounter = 0
 
 i = 0
 
-INPUT(“Input the string : “,inpstr)
+INPUT“Input the string : “,inpstr
 
 
 For i = 1 To Len(inpstr)
