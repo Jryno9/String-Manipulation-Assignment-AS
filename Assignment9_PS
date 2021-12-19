@@ -32,10 +32,10 @@ f_string = ‘’
 
 
 
-INPUT   "Enter the String :",inputstr  
+INPUT "Enter the String :",inputstr  
 
 
-firstchar = Mid  inputstr, 1, 1  
+firstchar = Mid(inputstr, 1, 1)
 
 f_string = f_string + firstchar
 
@@ -43,11 +43,11 @@ PRINT   firstchar
 
 For i = 2 To Len  inputstr  
 
-cmpchar = Mid  inputstr, i, 1  
+cmpchar = Mid(inputstr, i, 1) 
 
 PRINT  cmpchar  
 
-If firstchar <> Mid  inputstr, i, 1   Then
+If firstchar <> Mid(inputstr, i, 1) Then
 
 f_string = f_string + cmpchar
 
