@@ -1,0 +1,70 @@
+DECLARE str1 As String
+
+DECLARE str2 As String
+
+DECLARE str3 As String
+
+DECLARE finalstring As String
+
+DECLARE leftstring As String
+
+DECLARE rightstring As String
+
+DECLARE x As Integer
+
+DECLARE y As Integer
+
+leftstring = ""
+
+rightstring = ""
+
+x = 0
+
+str1 = ""
+
+str2 = ""
+
+finalstring = ""
+
+
+
+
+
+
+
+INPUT  "Enter the string : ",str1  
+
+
+str2 = "not"
+
+str3 = "bad"
+
+x = LOCATE  str1, str2  
+
+y = LOCATE  str1, str3  
+
+
+
+
+
+If x > 0 Then
+
+leftstring = Left  str1, x - 1  
+
+
+
+If y > 0 Then
+
+rightstring = Mid  str1, y + 3, Len  str1    
+
+
+
+
+
+End If
+
+End If
+
+finalstring = leftstring + "good" + rightstring
+
+PRINT  finalstring  
