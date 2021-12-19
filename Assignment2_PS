@@ -16,23 +16,20 @@ i = 0
 
 fstring = ""
 
-inpstr = ""
+inpstr =''
 
-cmpchar = ""
+cmpchar =''
 
-replchar= ""
+replchar= ''
 
-INPUT("Enter the string: ")
+INPUT"Enter the string: ",inpstr
 
-inpstr = Console.ReadLine()
 
-INPUT("Enter the character you want to replace: ",instr)
+INPUT"Enter the character you want to replace: ",inpchar
 
-inpchar = Console.ReadLine()
 
-INPUT("Enter the character you want to replace with:")
+INPUT"Enter the character you want to replace with:",replchar
 
-replchar = Console.ReadLine()
 
 For i = 1 To Len(inpstr)
 
