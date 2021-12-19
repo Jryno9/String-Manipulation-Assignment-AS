@@ -21,13 +21,10 @@ Module Module1
                 count = count + 1
             Else : If count > x Then
                     x = count
-                    Try
-                        mostrep = Mid(inputstr, i - 1, 1)
+         
+                     mostrep = Mid(inputstr, i - 1, 1)
 
 
-                    Catch ex As Exception
-                        mostrep = ""
-                    End Try
 
                 End If
                 count = 0
