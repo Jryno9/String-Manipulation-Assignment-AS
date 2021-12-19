@@ -1,0 +1,28 @@
+Module Module1
+
+    Sub Main()
+        Dim inpcount As Integer
+        inpcount = 0
+        Dim i As Integer
+        i = 0
+        Dim isMany As Boolean
+        isMany = False
+
+        Console.Write("Enter the number of donuts :")
+        inpcount = Console.ReadLine()
+        If inpcount > 10 Then
+            isMany = True
+        End If
+
+        
+        If isMany = True Then
+            Console.WriteLine("Number of donuts: MANY")
+        Else
+            Console.WriteLine("Number of donuts:" & inpcount)
+        End If
+        Console.ReadKey()
+
+    End Sub
+
+
+End Module
