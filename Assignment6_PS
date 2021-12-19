@@ -1,0 +1,38 @@
+DECLARE inpcount As Integer
+
+inpcount = 0
+
+DECLARE i As Integer
+
+i = 0
+
+DECLARE isMany As Boolean
+
+isMany = False
+
+
+
+INPUT("Enter the number of donuts :",inpcount)
+
+
+If inpcount > 10 Then
+
+isMany = True
+
+End If
+
+
+
+
+
+If isMany = True Then
+
+PRINT("Number of donuts: MANY")
+
+
+
+Else
+
+PRINT("Number of donuts:" & inpcount)
+
+End If
