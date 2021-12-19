@@ -1,0 +1,62 @@
+DECLARE i As Integer
+
+DECLARE count As Integer
+
+DECLARE inputstr As String
+
+DECLARE x As Integer
+
+DECLARE firstchar As CHARACTER
+
+DECLARE f_string As String
+
+DECLARE cmpchar As CHARACTER
+
+DECLARE secondchar As CHARACTER
+
+DECLARE lastchar As CHARACTER
+
+DECLARE seclastchar As CHARACTER
+
+i = 0
+
+cmpchar = ‘’
+
+count = 0
+
+inputstr = ""
+
+x = 0
+
+firstchar = ‘’
+
+secondchar = ‘’
+
+lastchar = ‘’
+
+seclastchar = ‘’
+
+f_string = ""
+
+
+
+
+
+INPUT"Enter the String :",inputstr
+
+
+firstchar = Midinputstr, 1, 1
+
+secondchar = Midinputstr, 2, 1
+
+
+
+For i = Leninputstr To 1 Step -1
+
+lastchar = Midinputstr, i, 1
+seclastchar = Midinputstr, i - 1, 1
+Exit For
+
+Next
+
+PRINT firstchar + secondchar + seclastchar + lastchar
